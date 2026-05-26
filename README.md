@@ -29,12 +29,15 @@ Este proyecto es un framework de automatización de pruebas de punta a punta (E2
 ├── cypress.config.js   # Configuración del framework
 └── package.json        # Dependencias y scripts
 
+
 ## 🏁 Cómo Empezar
+
 
 ### Requisitos previos
 
 - [Node.js](https://nodejs.org/) (v14 o superior)
 - npm (instalado con Node.js)
+
 
 ### Instalación
 
@@ -49,6 +52,7 @@ Este proyecto es un framework de automatización de pruebas de punta a punta (E2
 3. Instala las dependencias:
    ```bash
    npm install
+   
    ```
 
 ### Ejecución de Pruebas
