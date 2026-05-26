@@ -1,0 +1,7 @@
+[
+  {
+    "username": "Admin",
+    "password": "ClaveIncorrecta123",
+    "errorMessage": "Invalid credentials"
+  }
+]

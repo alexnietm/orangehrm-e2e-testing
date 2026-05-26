@@ -1,0 +1,20 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^15.14.2"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-real-events": "^1.15.0"
+  }
+}
