@@ -1,25 +1,31 @@
-# Framework de Automatización E2E - OrangeHRM
+Framework de Automatización E2E - OrangeHRM
 
-Este proyecto es un framework de automatización de pruebas de punta a punta (E2E) desarrollado para la aplicación **OrangeHRM Open Source**. Está construido con **Cypress**, enfocado en la mantenibilidad, escalabilidad y la aplicación de buenas prácticas de ingeniería de calidad.
+Este proyecto es un framework de automatización de pruebas de punta a punta (E2E) desarrollado para la aplicación OrangeHRM Open Source. Está construido con Cypress, enfocado en la mantenibilidad, escalabilidad y la aplicación de buenas prácticas de ingeniería de calidad.
 
-## 🚀 Características Principales
+🚀 Características Principales
 
-- **Page Object Model (POM):** Estructura organizada para facilitar el mantenimiento y evitar la duplicidad de código.
-- **Flujos Automatizados:** Pruebas completas de módulos críticos (Login, Recruitment, PIM).
-- **Integración CI/CD:** Ejecución automática de pruebas mediante GitHub Actions en cada subida de código.
-- **Comandos Personalizados:** Optimización de acciones comunes para un desarrollo de tests más ágil.
-- **Reportes Profesionales:** Gestión de resultados con capturas de pantalla en caso de fallos.
+Page Object Model (POM): Estructura organizada para facilitar el mantenimiento y evitar la duplicidad de código.
 
-## 🛠️ Stack Tecnológico
+Flujos Automatizados: Pruebas completas de módulos críticos (Login, Recruitment, PIM).
 
-- **Framework:** [Cypress](https://www.cypress.io/)
-- **Lenguaje:** JavaScript (ES6+)
-- **CI/CD:** GitHub Actions
-- **Patrones:** Page Object Model (POM)
+Integración CI/CD: Ejecución automática de pruebas mediante GitHub Actions en cada subida de código.
 
-## 📁 Estructura del Proyecto
+Comandos Personalizados: Optimización de acciones comunes para un desarrollo de tests más ágil.
 
-```text
+Reportes Profesionales: Gestión de resultados con capturas de pantalla en caso de fallos.
+
+🛠️ Stack Tecnológico
+
+Framework: Cypress
+
+Lenguaje: JavaScript (ES6+)
+
+CI/CD: GitHub Actions
+
+Patrones: Page Object Model (POM)
+
+📁 Estructura del Proyecto
+
 ├── cypress
 │   ├── e2e             # Scripts de prueba organizados por módulos
 │   ├── fixtures        # Datos de prueba (JSON)
@@ -30,41 +36,41 @@ Este proyecto es un framework de automatización de pruebas de punta a punta (E2
 └── package.json        # Dependencias y scripts
 
 
-## 🏁 Cómo Empezar
+🏁 Cómo Empezar
+
+Requisitos previos
+
+Node.js (v14 o superior)
+
+npm (instalado con Node.js)
+
+Instalación
+
+Clona el repositorio:
+
+git clone [https://github.com/alexnietm/orangehrm-e2e-testing.git](https://github.com/alexnietm/orangehrm-e2e-testing.git)
 
 
-### Requisitos previos
+Entra en la carpeta del proyecto:
 
-- [Node.js](https://nodejs.org/) (v14 o superior)
-- npm (instalado con Node.js)
+cd orangehrm-e2e-testing
 
 
-### Instalación
+Instala las dependencias:
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/alexnietm/orangehrm-e2e-testing.git
-   ```
-2. Entra en la carpeta del proyecto:
-   ```bash
-   cd orangehrm-e2e-testing
-   ```
-3. Instala las dependencias:
-   ```bash
-   npm install
-   
-   ```
+npm install
 
-### Ejecución de Pruebas
 
-- **Abrir Cypress (Modo Interactivo):**
-  ```bash
-  npx cypress open
-  ```
-- **Ejecutar en consola (Modo Headless):**
-  ```bash
-  npx cypress run
-  ```
+Ejecución de Pruebas
 
----
-*Desarrollado por Mauro Alexander Nieto.*
+Abrir Cypress (Modo Interactivo):
+
+npx cypress open
+
+
+Ejecutar en consola (Modo Headless):
+
+npx cypress run
+
+
+Desarrollado por Mauro Alexander Nieto.
