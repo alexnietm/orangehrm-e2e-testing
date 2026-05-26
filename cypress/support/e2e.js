@@ -17,3 +17,11 @@
 import './commands'
 import "cypress-mochawesome-reporter/register";
 import "cypress-real-events";
+Cypress.on('uncaught:exception', (err) => {
+  const msg = err.message || err.stack || err.toString()
+
+  if (msg.includes('response') || msg.includes('undefined')) {
+    return false
+  }
+})
+

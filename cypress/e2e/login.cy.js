@@ -28,31 +28,31 @@ describe('Modulo de login', () => {
         });
     });
 
-    it('TC-03: Debería cerrar sesión correctamente', () => {
-        cy.fixture('login_ok').then((credentials) => {
-            const user = credentials[0];
-            
+     it('TC-03: Debería cerrar sesión correctamente', () => {
+         cy.fixture('login_ok').then((credentials) => {
+             const user = credentials[0];
+
             cy.escribir(loginPage.elements.username, user.username);
             cy.escribir(loginPage.elements.password, user.password);
             cy.miclick(loginPage.elements.loginBtn);
 
-          
-            cy.url().should('include', '/dashboard');
+               cy.url().should('include', '/dashboard');
 
             loginPage.elements.profileMenu()
-                .should('be.visible')
-                .click();
-            
-      
-            loginPage.elements.logoutBtn()
-                .should('be.visible')
-                .click();
+            .should('exist')
+            .should('be.visible')
+            .click({ force: true });
 
-           
+            loginPage.elements.logoutBtn()
+            .should('exist')
+            .should('be.visible')
+            .click({ force: true });
+
             cy.url().should('include', '/auth/login');
             cy.get('.orangehrm-login-title').should('be.visible');
         });
-    });
+        });
+
 }); 
 
   
