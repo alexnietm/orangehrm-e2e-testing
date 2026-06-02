@@ -5,7 +5,11 @@ class PimPage {
         addEmployeeBtn: () => cy.get('.orangehrm-header-container > .oxd-button'),
         firstName: () => cy.get('[name="firstName"]'),
         lastName: () => cy.get('[name="lastName"]'),
-        saveButton: () => cy.get('.oxd-button--secondary')
+        saveButton: () => cy.get('.oxd-button--secondary'),
+
+        idInput: () => cy.get('.oxd-input-group:contains("Employee Id") input'),
+        searchButton: () => cy.get('button[type="submit"]'),
+        tableRow: () => cy.get('.oxd-table-card')
     }
 
     clickPim() {
@@ -34,6 +38,11 @@ class PimPage {
     clickSaveButton() {
         this.elements.saveButton().click()
     } 
+
+    searchEmployeeById(employeeId) {
+    this.elements.idInput().clear().type(employeeId);
+    this.elements.searchButton().click({ force: true });
+  }
 }
 
 export const pimPage = new PimPage()

@@ -18,4 +18,11 @@ describe('Modulo de PIM - Gestion de Empleados ', () => {
         cy.url().should('include', '/pim/viewPersonalDetails')
         
     });
+
+    it('TC-05: Buscar un empleado por ID', () => {  
+        pimPage.clickPim();
+        pimPage.searchEmployeeById('0001'); 
+        pimPage.elements.tableRow().should('be.visible').and('contain', '0001');
+    });
+
 });
