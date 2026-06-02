@@ -33,7 +33,7 @@ Se aplican las siguientes buenas prácticas para garantizar la resiliencia en en
 | TC-02 | Login | Error - Credenciales Inválidas | Alta | Implementado |
 | TC-03 | Login | Cierre de Sesión (Logout) | Media | Implementado |
 | TC-04 | PIM | Registro de Nuevo Empleado | Alta | Implementado |
-| TC-05 | PIM | Buscar Empleado por ID | Alta | Pendiente |
+| TC-05 | PIM | Buscar Empleado por ID | Alta | Implementado |
 
 ## 6. Criterios de Aceptación
 * El 100% de los casos de prueba de prioridad "Alta" deben pasar en el entorno de CI/CD.

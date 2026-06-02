@@ -18,7 +18,7 @@ Cypress.Commands.add('verificarTexto', (selector, textoEsperado) => {
 
 
 Cypress.Commands.add('loginOrangeHRM', (username = 'Admin', password = 'admin123') => {
-  cy.get('input[name="username"]').type(username)
-  cy.get('input[name="password"]').type(password)
-  cy.get('button[type="submit"]').click()
-})
+  cy.get('input[name="username"]', { timeout: 10000 }).should('be.visible').type(username);
+  cy.get('input[name="password"]').should('be.visible').type(password);
+  cy.get('button[type="submit"]').click();
+});

@@ -7,9 +7,13 @@ class PimPage {
         lastName: () => cy.get('[name="lastName"]'),
         saveButton: () => cy.get('.oxd-button--secondary'),
 
-        idInput: () => cy.get('.oxd-input-group:contains("Employee Id") input'),
+        idInput: () => cy.get('label').contains('Employee Id').parent().parent().find('input'),
         searchButton: () => cy.get('button[type="submit"]'),
-        tableRow: () => cy.get('.oxd-table-card')
+        tableRow: () => cy.get('.oxd-table-body .oxd-table-card, .oxd-table-body .oxd-table-row'),
+
+
+        deleteIcon: () => cy.get('.oxd-table-cell-actions .bi-trash'),
+        confirmDeleteBtn: () => cy.contains('button', 'Yes, Delete')
     }
 
     clickPim() {
@@ -42,6 +46,11 @@ class PimPage {
     searchEmployeeById(employeeId) {
     this.elements.idInput().clear().type(employeeId);
     this.elements.searchButton().click({ force: true });
+  }
+
+  deleteEmployeeById(employeeId) {
+    this.elements.deleteIcon().click({ force: true });
+    this.elements.confirmDeleteBtn().click({ force: true });
   }
 }
 

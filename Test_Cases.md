@@ -15,4 +15,5 @@ Este documento detalla los escenarios de prueba diseñados para la validación d
 | ID | Prioridad | Caso de Prueba | Pasos | Resultado Esperado | Estado de Automatización |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | TC-04 | Alta | Agregar Nuevo Empleado | 1. Ir a PIM.<br>2. Clic en 'Add Employee'.<br>3. Llenar Nombre y Apellido.<br>4. Clic en 'Save'. | Se visualiza el perfil del nuevo empleado creado. |  ✅ Automatizado
-| TC-05 | Media | Buscar Empleado por ID | 1. Ir a PIM.<br>2. Ingresar ID en el filtro.<br>3. Clic en 'Search'. | El registro correspondiente aparece en la tabla. | 🔄 Pendiente |
+| TC-05 | Media | Buscar Empleado por ID | 1. Ir a PIM.<br>2. Ingresar ID en el filtro.<br>3. Clic en 'Search'. | El registro correspondiente aparece en la tabla. | ✅ Automatizado |
+| TC-06 | Alta | Eliminar Empleado por ID | 1. Ir a PIM.<br>2. Ingresar ID en el filtro.<br>3. Clic en 'Search'.<br>4. Clic en icono de papelera.<br>5. Confirmar en modal. | El registro desaparece de la tabla y se muestra mensaje de éxito. | ✅ Automatizado |
