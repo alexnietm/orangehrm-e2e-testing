@@ -51,7 +51,7 @@ describe('Modulo de login', () => {
             cy.url().should('include', '/auth/login');
             cy.get('.orangehrm-login-title').should('be.visible');
         });
-        });
+     });
 
 }); 
 
